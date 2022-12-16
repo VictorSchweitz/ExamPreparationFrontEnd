@@ -1,0 +1,80 @@
+:root
+{
+    /* Colors */
+    --primary-color: #1bb9b9;
+    --secondary-color: #fff;
+    --tertiary-color: #e85a1e;
+    --overlay-color: rgba(0, 0, 0, .6);
+
+    /* Radii */
+    --base-border-radius: 10px;
+
+    /* Shadows */
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    --text-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+
+}
+
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay-color);
+}
+
+.btn
+{
+    background-color: transparent;
+    padding: 10px 20px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: background-color .2s ease-in;
+}
+
+.btn:hover,
+.btn[type="submit"]:hover
+{
+    transition: background-color .2s ease-in;
+}
+
+
+.btn:active,
+.btn[type="submit"]:active
+{
+    transform: scale(.98);
+    box-shadow: none;
+    transition: none;
+}
+
+.btn.btn-primary
+{
+    background-color: var(--primary-color);
+}
+
+.btn.btn-primary:hover
+{
+    background-color: var(--tertiary-color);
+    transition: background-color .2s ease-in;
+}
+
+small
+{
+    font-style: italic;
+    color: var(--primary-color);
+    margin-top: 10px;
+    text-shadow: var(--text-shadow);
+}
+
+header
+{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    z-index: 100;
+    color: var(--secondary-color);
+}

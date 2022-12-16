@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <script src="js/main.js" type="module"></script>
+    <script src="js/validateform.js"></script>
+    <title>Car Booking</title>
+</head>
+
+<body>
+    <nav class="main-nav" id="main-nav">
+        <div class="container nav-container">
+            <h1 class="logo">Car Rental, Inc.</h3>
+        </div>
+    </nav>
+
+    <!-- Section: Booking -->
+    <section class="booking" id="booking">
+        <div class="overlay"></div>
+        <img src="Images/bg.jpg" alt="">
+
+
+        <form action="/carbooking" method="POST" class="form booking-form" id="booking-form">
+            <div class="container form-content-container">
+                <div>
+                    <label for="brand">Brand</label>
+                    <input type="text" name="brand" class="input form-input" id="brand-input" placeholder="Brand">
+                </div>
+                <div>
+                    <label for="model">Model</label>
+                    <input type="text" name="model" class="input form-input" id="model-input" placeholder="Model">
+                </div>
+
+                <div>
+                    <label for="rental-period">Rental period (in days)</label>
+                    <input type="number" name="rental-period" class="input form-input" id="rental-period"
+                        placeholder="Number of rental days">
+
+                    <small class="msg rental-msg" id="rental-msg">If you rent for 30 days or more, you'll get a 70 %
+                        discount</small>
+                </div>
+            </div>
+
+            <div class="container price-overview-container">
+                <div>
+                    <label for="daily-price">Daily Price</label>
+                    <p class="price daily-price" id="daily-price">1500</p>
+                </div>
+
+                <div>
+                    <label for="total-price">Total Price</label>
+                    <p class="price total-price" id="total-price"></p>
+                </div>
+            </div>
+
+            <button class="btn btn-primary submit-btn" id="submit-btn" type="submit">Book Car</button>
+        </form>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+nav.main-nav
+{
+    position: absolute;
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 70px;
+    box-shadow: var(--box-shadow);
+    z-index: 100;
+}
+
+nav.main-nav .container.nav-container
+{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav.main-nav .container.nav-container h1
+{
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+form.form.booking-form
+{
+    background-color: var(--secondary-color);
+    height: 45vh;
+    width: 60vw;
+}
+
+form.form.booking-form .container.form-content-container
+{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+form.form.booking-form .container.form-content-container div
+{
+    margin-top: 10px;
+    width: 95%;
+}
+
+.price-overview-container
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+form.form.booking-form .container.form-content-container input
+{
+    width: 100%;
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+}
+
+form.form.booking-form button[type="submit"].btn.submit-btn
+{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    box-shadow: var(--box-shadow);
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+table
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-collapse: collapse;
+    width: 80vw;
+}
+
+td
+{
+    overflow-y: scroll;
+}
+
+td, th
+{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+
+tr:nth-child(even)
+{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+tr:nth-child(odd)
+{
+    font-size: 17px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+tr:nth-child(odd) i
+{
+    font-size: 17px;
+    color: var(--primary-color);
+}
+
+td div
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+tr td:last-child
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+td div i
+{
+    cursor: pointer;
+    transition: transform .0075s ease-in, box-shadow .0075s ease-in;
+}
+
+td div i:hover
+{
+    transform: scale(1.1);
+    text-shadow: var(--text-shadow);
+    transition: transform .0075s ease-in, box-shadow .0075s ease-in;
+}
+
+tr td:last-child
+{
+    overflow: hidden;
+}
+
+.edit-cells-btn
+{
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
